@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+    
+    /* Inverted Section */
+    --background-inverted: 0 0% 4%;
+    --foreground-inverted: 0 0% 100%;
+    
+    /* Accent - Cinematic Gold */
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 4%;
+    
+    /* Muted */
+    --muted: 0 0% 42%;
+    --muted-foreground: 0 0% 42%;
+    
+    /* Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+    --card-inverted: 0 0% 8%;
+    --card-inverted-foreground: 0 0% 100%;
+    
+    /* UI Elements */
+    --primary: 0 0% 4%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & Inputs */
+    --border: 0 0% 90%;
+    --border-inverted: 0 0% 20%;
+    --input: 0 0% 90%;
+    --ring: 51 100% 50%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+    
+    --radius: 0.25rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    
+    /* Sidebar (keeping existing) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
+    --background-inverted: 0 0% 100%;
+    --foreground-inverted: 0 0% 4%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  /* Custom Selection */
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
+}
+
+@layer components {
+  /* Section styling */
+  .section-light {
+    @apply bg-background text-foreground;
+  }
+  
+  .section-dark {
+    @apply bg-background-inverted text-foreground-inverted;
+  }
+
+  /* Section numbers */
+  .section-number {
+    @apply text-[200px] md:text-[300px] font-bold opacity-5 absolute -top-10 -left-4 select-none pointer-events-none;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .section-number-dark {
+    @apply text-white opacity-5;
+  }
+
+  /* Hero title */
+  .hero-title {
+    @apply text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[150px] font-bold leading-[0.85] tracking-tighter;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* Section title */
+  .section-title {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* Project card hover */
+  .project-card {
+    @apply relative overflow-hidden cursor-pointer;
+  }
+  
+  .project-card-overlay {
+    @apply absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-500 flex items-center justify-center;
+  }
+  
+  .project-card-image {
+    @apply w-full h-full object-cover transition-transform duration-700 group-hover:scale-105;
+  }
+
+  /* Gear card */
+  .gear-card {
+    @apply bg-card-inverted rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Link underline animation */
+  .link-underline {
+    @apply relative inline-block;
+  }
+  
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[2px] bg-current transform scale-x-0 origin-left transition-transform duration-300;
+  }
+  
+  .link-underline:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Form inputs */
+  .form-input {
+    @apply w-full bg-transparent border-0 border-b-2 border-border-inverted py-4 px-0 text-foreground-inverted placeholder:text-muted focus:outline-none focus:border-accent transition-colors duration-300;
+  }
+
+  /* WhatsApp button */
+  .whatsapp-button {
+    @apply fixed bottom-8 right-8 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform duration-300;
+    animation: pulse-whatsapp 2s infinite;
+  }
+  
+  @keyframes pulse-whatsapp {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+  }
+
+  /* Button primary */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-foreground-inverted text-background-inverted font-semibold text-sm uppercase tracking-wider transition-all duration-300 hover:bg-accent hover:text-accent-foreground;
+  }
+
+  /* Nav link */
+  .nav-link {
+    @apply text-sm font-medium uppercase tracking-widest transition-colors duration-300 hover:text-accent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
