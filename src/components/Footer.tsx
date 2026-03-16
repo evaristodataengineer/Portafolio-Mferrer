@@ -21,6 +21,15 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="flex items-center gap-8 ">
             <a
+              href="https://instagram.com/mglferrer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted hover:text-foreground-inverted transition-colors transform hover:scale-110 transition-transform"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-6 h-6 md:w-6 md:h-6" />
+            </a>
+            <a
               href="https://www.tiktok.com/@mglferrer"
               target="_blank"
               rel="noopener noreferrer"
@@ -37,15 +46,6 @@ const Footer = () => {
               aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6 md:w-6 md:h-6" />
-            </a>
-            <a
-              href="https://instagram.com/mglferrer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted hover:text-foreground-inverted transition-colors transform hover:scale-110 transition-transform"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-6 h-6 md:w-6 md:h-6" />
             </a>
             <a
               href="https://vimeo.com/mglferrer"

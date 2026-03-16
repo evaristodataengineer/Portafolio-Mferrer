@@ -70,7 +70,7 @@ const HeroSection = () => {
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted hover:text-foreground transition-colors cursor-pointer"
         aria-label="Scroll to work"
       >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
+        <span className="text-xs uppercase tracking-widest">Desliza</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}

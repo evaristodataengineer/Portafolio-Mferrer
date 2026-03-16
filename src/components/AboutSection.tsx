@@ -36,7 +36,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-muted text-sm tracking-widest uppercase">Sobre mi</span>
+            <span className="text-muted text-sm tracking-widest uppercase">MGLFERRER</span>
             <h2 className="section-title mt-4 mb-8">SOBRE MI</h2>
 
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">

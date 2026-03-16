@@ -12,20 +12,20 @@ interface GearItem {
 const gearItems: GearItem[] = [
   {
     name: "Sony Fx3",
-    category: "CAMERA",
-    specs: ["Full-Frame Cinema", "4K 120fps", "S-Cinetone"],
+    category: "CÁMARA",
+    specs: ["Full-Frame Cinema camera", "4K 60fps 4:2:2 10bit", "S-Log3"],
     image: "/projects/Camaras/FX3.webp"
   },
   {
-    name: "Sigma 24-70mm f/2.8",
-    category: "LENS",
-    specs: ["DG DN II Art", "Sony E-Mount", "Constant f/2.8"],
+    name: "Sigma 24-70mm F/2.8",
+    category: "OBJETIVO",
+    specs: ["DG DN II Art", "Sony E-Mount", "F/2.8"],
     image: "/projects/Camaras/Sigma.webp"
   },
   {
     name: "Atomos Ninja V",
     category: "MONITOR",
-    specs: ['5" 4K Monitor / Recorder', "Apple ProRes", "HDMI"],
+    specs: ["4K Monitor / Recorder", "Apple ProRes", "RAW"],
     image: "/projects/Camaras/Atomos.webp"
   }
 ];
@@ -67,8 +67,8 @@ const GearSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 md:mb-24 text-center"
         >
-          <span className="text-muted text-sm tracking-widest uppercase">Equipo</span>
-          <h2 className="section-title mt-4">EL EQUIPO</h2>
+          <span className="text-muted text-sm tracking-widest uppercase">Material</span>
+          <h2 className="section-title mt-4">MI EQUIPO</h2>
           <p className="text-muted-foreground mt-4 text-lg">Herramientas que dan vida a las historias</p>
         </motion.div>
 
@@ -122,9 +122,9 @@ const GearSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center"
         >
-          <p className="text-muted-foreground mb-6">Ready to use this gear for your project?</p>
+          <p className="text-muted-foreground mb-6">¿Listo para darle vida a tu proyecto?</p>
           <button onClick={handleScrollToContact} className="btn-primary">
-            LET'S TALK
+            ¡VAMOS A HABLAR!
           </button>
         </motion.div>
       </div>

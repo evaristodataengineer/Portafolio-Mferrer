@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "De Vicente Dental",
     category: "Corporativo",
     year: "2025",
-    description: "Video comercial para la clínica De Vicente Dental en Granada, destinado a sus redes sociales y su página web, con objetivo de mostrar sus instalaciones y transmitir profesionalidad, tecnología y confianza. Este vídeo es solo una parte del trabajo que desarrollamos juntos, donde buscamos transmitir la esencia del lugar: un espacio moderno, cálido y pensado para que cada paciente se sienta cómodo desde el primer momento.",
+    description: "Vídeo comercial para la clínica De Vicente Dental en Granada, destinado a sus redes sociales y su página web, con objetivo de mostrar sus instalaciones y transmitir profesionalidad, tecnología y confianza. Este vídeo es solo una parte del trabajo que desarrollamos juntos, donde buscamos transmitir la esencia del lugar: un espacio moderno, cálido y pensado para que cada paciente se sienta cómodo desde el primer momento.",
     image: "/projects/DeVicente/vicente.png",
     video: {
       type: 'vimeo',
@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Cortijo Alameda",
     category: "Hostelería",
     year: "2025",
-    description: "Tuve la oportunidad de grabar y editar este video para las redes sociales del Cortijo Alameda, con el objetivo de mostrar cómo se vive una celebración en este entorno único.A lo largo del rodaje quise reflejar la experiencia completa del servicio, desde la ambientación de los espacios, hasta el cuidado servicio de catering, la atención al detalle y el encanto de las instalaciones.",
+    description: "Tuve la oportunidad de grabar y editar este video para las redes sociales de Cortijo Alameda, con el objetivo de mostrar cómo se vive una celebración en este entorno único. A lo largo del rodaje quise reflejar la experiencia completa del servicio, desde la ambientación de los espacios, hasta el cuidado servicio de cáterin, la atención al detalle y el encanto de las instalaciones.",
     image: "/projects/CortijoAlameda/CortijoAlamedafoto 3.webp",
     video: {
       type: 'vimeo',
@@ -72,10 +72,10 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "La niña Chica",
+    title: "Niña Chica",
     category: "Hostelería",
     year: "2025",
-    description: "Vídeo para las redes sociales del restaurante La Niña Chica, cuyo objetivo era capturar el ambiente que tienen los domingos en el sitio, con música en vivo, gente divirtiéndose y un ambiente genial.",
+    description: "Vídeo para las redes sociales del restaurante Niña Chica, cuyo objetivo era capturar el ambiente que tienen los domingos en el sitio, con música en vivo, gente divirtiéndose y un ambiente genial para poder transmitirlo en una pieza.",
     image: "/projects/Evento/niñachica.png",
     video: {
       type: 'vimeo',
@@ -84,11 +84,11 @@ const projects: Project[] = [
     size: 'vertical'
   },
   {
-    id: 7,
+    id: 6,
     title: "De Vicente Dental",
     category: "Entevista",
     year: "2025",
-    description: "Vídeo para las redes sociales de De Vicente Dental en Granada, formato entrevista con un set de iluminación de dos puntos.",
+    description: "Vídeo comercial para la clínica De Vicente Dental en Granada, destinado a sus redes sociales y su página web, con objetivo de mostrar sus instalaciones y transmitir profesionalidad, tecnología y confianza. Este vídeo es solo una parte del trabajo que desarrollamos juntos, donde buscamos transmitir la esencia del lugar: un espacio moderno, cálido y pensado para que cada paciente se sienta cómodo desde el primer momento.",
     image: "/projects/Entrevista/entre.png",
     video: {
       type: 'vimeo',
@@ -96,7 +96,32 @@ const projects: Project[] = [
     },
     size: 'full'
   },
-
+  {
+    id: 7,
+    title: "AUDI RS3 AUTO UNIÓN",
+    category: "Redes Sociales",
+    year: "2025",
+    description: "Vídeo para las Redes Sociales de Concesionario Auto Unión en Granada",
+    image: "/projects/Concesionario Union Granada/VolanteAudi.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://vimeo.com/1173991768?fl=pl&fe=sh"
+    },
+    size: 'vertical'
+  },
+  {
+    id: 8,
+    title: "Cortador de Jamón",
+    category: "Redes Sociales",
+    year: "2025",
+    description: "Vídeo de un cortador de jamón para las redes sociales de Cortijo Alameda como parte de un trabajo conjunto para mostrar los servicios del lugar.",
+    image: "/projects/CortijoAlameda/CortandoJamon.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://vimeo.com/1174007974?share=copy&fl=sv&fe=ci"
+    },
+    size: 'vertical'
+  },
 
 ];
 
@@ -169,7 +194,7 @@ const WorkSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 md:mb-24"
         >
-          <span className="text-muted text-sm tracking-widest uppercase">Trabajo Seleccionado</span>
+          <span className="text-muted text-sm tracking-widest uppercase">Mis trabajos </span>
           <h2 className="section-title mt-4 text-foreground-inverted">PROYECTOS</h2>
         </motion.div>
 
@@ -184,7 +209,7 @@ const WorkSection = () => {
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className={`project-card ${getSizeClasses(project.size)}`}
+              className={`project-card group ${getSizeClasses(project.size)}`}
               onClick={() => openProject(project)}
             >
               <img
@@ -194,11 +219,30 @@ const WorkSection = () => {
                 loading="lazy"
               />
               <div className="project-card-overlay">
-                <div className="text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
-                  <Play className="w-12 h-12 mx-auto mb-4" />
-                  <p className="text-xs uppercase tracking-widest text-muted mb-2">{project.category}</p>
-                  <h3 className="text-2xl md:text-3xl font-display font-bold">{project.title}</h3>
-                  <p className="text-sm mt-2 text-muted">{project.year}</p>
+                {/* Play button circle */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="
+                    relative flex items-center justify-center
+                    w-16 h-16 md:w-20 md:h-20 rounded-full
+                    bg-white/10 backdrop-blur-sm border border-white/30
+                    opacity-0 scale-75
+                    group-hover:opacity-100 group-hover:scale-100
+                    transition-all duration-500 ease-out
+                    shadow-[0_0_30px_rgba(255,255,255,0.2)]
+                    group-hover:shadow-[0_0_50px_rgba(255,255,255,0.35)]
+                  ">
+                    <Play className="w-6 h-6 md:w-8 md:h-8 text-white fill-white translate-x-0.5" />
+                  </div>
+                </div>
+
+                {/* Bottom info */}
+                <div className="absolute bottom-0 left-0 right-0 p-5 text-white
+                  translate-y-3 opacity-0
+                  group-hover:translate-y-0 group-hover:opacity-100
+                  transition-all duration-500 ease-out
+                ">
+                  <p className="text-xs uppercase tracking-widest text-white/60 mb-1">{project.category} · {project.year}</p>
+                  <h3 className="text-xl md:text-2xl font-display font-bold leading-tight">{project.title}</h3>
                 </div>
               </div>
             </motion.div>

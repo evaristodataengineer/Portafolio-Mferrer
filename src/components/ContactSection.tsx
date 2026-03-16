@@ -108,7 +108,7 @@ const ContactSection = () => {
         >
           <h2 className="section-title">CREAR</h2>
           <h2 className="section-title text-muted">ALGO</h2>
-          <p className="text-muted-foreground mt-6 text-lg">📩 Si tienes una idea en mente o necesitas dar forma a tu proyecto audiovisual, estaré encantado de ayudarte. Ponte en contacto conmigo y demos forma a tu proyecto.</p>
+          <p className="text-muted-foreground mt-6 text-lg">📩 Si necesitas dar forma a tu proyecto audiovisual, estaré encantado de ayudarte. Ponte en contacto conmigo y demos forma a tu proyecto.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-5 gap-12 md:gap-16">
@@ -236,7 +236,7 @@ const ContactSection = () => {
                 "ENVIANDO..."
               ) : (
                 <>
-                  SEND MESSAGE
+                  ENVIAR MENSAJE
                   <Send className="w-4 h-4" />
                 </>
               )}

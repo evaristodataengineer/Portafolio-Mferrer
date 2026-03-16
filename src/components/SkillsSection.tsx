@@ -7,22 +7,22 @@ const skillCategories = [
     skills: ["Grabación de vídeo", "Dirección de fotografía", "Iluminación", "Storytelling"]
   },
   {
-    title: "POST-PRODUCTION",
+    title: "POST-PRODUCCIÓN",
     skills: ["Edición de vídeo", "Color Grading", "Motion Graphics", "Diseño de sonido"]
   },
   {
-    title: "SPECIALIZED",
-    skills: ["Accessible Subtitling (UNE 153010)", "Audio Description", "AI Enhancement (Topaz)", "Live Streaming (OBS)"]
+    title: "EXTRA",
+    skills: ["Subtitulado accesible (UNE 153010)", "Mejora de vídeo con IA (Topaz)", "Streaming en directo (OBS)", "Adaptación para redes sociales (vertical / reels / shorts)"]
   }
 ];
 
 const software = [
-  { name: "DaVinci Resolve", icon: "🎬" },
-  { name: "Adobe Premiere Pro", icon: "🎥" },
-  { name: "Adobe After Effects", icon: "✨" },
-  { name: "Adobe Photoshop", icon: "🖼️" },
-  { name: "OBS Studio", icon: "📡" },
-  { name: "Topaz Video AI", icon: "🤖" }
+  { name: "DaVinci Resolve", icon: "/software-icons/davinci-resolve.png" },
+  { name: "Adobe Premiere Pro", icon: "/software-icons/premiere-pro.png" },
+  { name: "Adobe After Effects", icon: "/software-icons/after-effects.png" },
+  { name: "Adobe Photoshop", icon: "/software-icons/photoshop.png" },
+  { name: "OBS Studio", icon: "/software-icons/obs-studio.png" },
+  { name: "Topaz Video AI", icon: "/software-icons/topaz-video-ai.png" }
 ];
 
 const languages = [
@@ -111,7 +111,13 @@ const SkillsSection = () => {
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 className="bg-card-inverted p-4 rounded-sm text-center hover:bg-accent/10 transition-colors group"
               >
-                <span className="text-2xl mb-2 block">{item.icon}</span>
+                <div className="w-10 h-10 mx-auto mb-2 flex items-center justify-center">
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <span className="text-xs text-foreground-inverted/70 group-hover:text-foreground-inverted transition-colors">
                   {item.name}
                 </span>
