@@ -31,7 +31,7 @@ const certifications = [
 
 const CertificationsSection = () => {
   return (
-    <section className="py-24 md:py-32 section-dark relative overflow-hidden">
+    <section id="certifications" className="py-24 md:py-32 section-dark relative overflow-hidden">
       <span className="section-number section-number-dark">04</span>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -42,8 +42,8 @@ const CertificationsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 md:mb-24"
         >
-          <span className="text-muted text-sm tracking-widest uppercase">Formación</span>
-          <h2 className="section-title mt-4 text-foreground-inverted">EDUCACION</h2>
+          <span className="text-muted text-sm tracking-widest uppercase">EDUCACIÓN</span>
+          <h2 className="section-title mt-4 text-foreground-inverted">FORMACIÓN</h2>
         </motion.div>
 
         {/* Timeline */}

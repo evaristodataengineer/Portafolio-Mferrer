@@ -23,8 +23,26 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative px-6 section-light">
-      <div className="text-center">
+    <section className="min-h-screen flex flex-col justify-center items-center relative px-6 section-light overflow-hidden">
+      {/* Camera background image — desaturated and low opacity */}
+      <img
+        src="/projects/FotoInicio.webp"
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          objectPosition: 'center',
+          filter: 'grayscale(100%)',
+          opacity: 0.17,
+          pointerEvents: 'none',
+          userSelect: 'none',
+        }}
+      />
+      <div className="text-center" style={{ position: 'relative', zIndex: 1 }}>
         <motion.h1
           className="hero-title"
           initial="hidden"
@@ -52,10 +70,10 @@ const HeroSection = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="mt-8 md:mt-12"
         >
-          <p className="text-xl md:text-2xl font-light tracking-wide text-muted-foreground">
+          <p className="text-xl md:text-2xl font-light tracking-wide text-foreground">
             Filmmaker & Video Editor
           </p>
-          <p className="text-sm md:text-base mt-3 text-muted tracking-widest uppercase">
+          <p className="text-sm md:text-base mt-3 tracking-widest uppercase text-foreground">
             Granada, España
           </p>
         </motion.div>
@@ -68,6 +86,7 @@ const HeroSection = () => {
         transition={{ delay: 1.2, duration: 0.8 }}
         onClick={handleScrollToWork}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted hover:text-foreground transition-colors cursor-pointer"
+        style={{ position: 'absolute', zIndex: 1 }}
         aria-label="Scroll to work"
       >
         <span className="text-xs uppercase tracking-widest">Desliza</span>

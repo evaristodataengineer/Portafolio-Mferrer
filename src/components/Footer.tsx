@@ -65,7 +65,23 @@ const Footer = () => {
             </p>
             <span className="hidden md:inline text-muted">•</span>
             <p className="text-sm text-muted">
-              Designed for filmmakers
+              Designed by{" "}
+              <a
+                href="https://www.linkedin.com/in/evaristo-sandoval-gil-86a6a0291/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: 'underline',
+                  textDecorationColor: 'var(--color-accent)',
+                  textUnderlineOffset: '3px',
+                  color: 'inherit',
+                  transition: 'opacity 0.2s',
+                }}
+                onMouseEnter={e => (e.currentTarget.style.opacity = '0.75')}
+                onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+              >
+                Evaristo
+              </a>
             </p>
           </div>
         </div>

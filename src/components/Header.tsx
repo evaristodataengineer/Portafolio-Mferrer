@@ -7,6 +7,7 @@ const navItems = [
   { label: 'SOBRE MI', href: '#about' },
   { label: 'HABILIDADES', href: '#skills' },
   { label: 'EQUIPO', href: '#gear' },
+  { label: 'FORMACIÓN', href: '#certifications' },
   { label: 'CONTACTO', href: '#contact' },
 ];
 

@@ -12,7 +12,7 @@ const skillCategories = [
   },
   {
     title: "EXTRA",
-    skills: ["Subtitulado accesible (UNE 153010)", "Mejora de vídeo con IA (Topaz)", "Streaming en directo (OBS)", "Adaptación para redes sociales (vertical / reels / shorts)"]
+    skills: ["Subtitulado accesible (UNE 153010)", "Mejora de vídeo con IA (Topaz)", "Streaming en directo (OBS)", "Servicio de Dron"]
   }
 ];
 

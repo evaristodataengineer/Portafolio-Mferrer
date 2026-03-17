@@ -105,7 +105,7 @@ const projects: Project[] = [
     image: "/projects/Concesionario Union Granada/VolanteAudi.webp",
     video: {
       type: 'vimeo',
-      url: "https://vimeo.com/1173991768?fl=pl&fe=sh"
+      url: "https://player.vimeo.com/video/1173991768"
     },
     size: 'vertical'
   },
@@ -118,7 +118,7 @@ const projects: Project[] = [
     image: "/projects/CortijoAlameda/CortandoJamon.webp",
     video: {
       type: 'vimeo',
-      url: "https://vimeo.com/1174007974?share=copy&fl=sv&fe=ci"
+      url: "https://player.vimeo.com/video/1174007974"
     },
     size: 'vertical'
   },
