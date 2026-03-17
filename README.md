@@ -122,9 +122,7 @@ npm run dev
 
 ## 🌐 Demo en producción
 
-> 🔗 **[Ver portafolio en Vercel →](https://portafolio-mferrer.vercel.app)**  
-> *(Actualiza el enlace con la URL real de tu proyecto)*
-
+> 🔗 **[Ver portafolio en Vercel →]([https://portafolio-mferrer.vercel.app](https://mglferrer-filmmaker.vercel.app/))**  
 ---
 
 ## 📄 Licencia
