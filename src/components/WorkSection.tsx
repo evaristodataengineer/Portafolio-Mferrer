@@ -59,17 +59,18 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Red Emprende",
-    category: "Eventos",
-    year: "2024",
-    description: "Cobertura audiovisual del evento Red Emprende Granada, donde alumnos de FP participaron en talleres y dinámicas de creación de ideas para impulsar la candidatura de Granada como Capital Europea de la Cultura. Desde mi enfoque como filmmaker, el objetivo fue capturar la energía creativa, la colaboración y el talento joven como motor de innovación cultural.",
-    image: "/projects/Evento/APLAUSOS00049511.jpg",
+    title: "Este es tu momento",
+    category: "Tratamientos",
+    year: "2026",
+    description: "Escucha tu piel, este es tu momento. Vídeo para las redes sociales de Alice Beauty Concept cuidando cada detalle para transmitir su esencia, profesionalidad y resultados.",
+    image: "/projects/TRATAMIENTOS/ESTE-ES-TU-MOMENTO",
     video: {
       type: 'vimeo',
-      url: "https://player.vimeo.com/video/1152834576"
+      url: "https://vimeo.com/1182971799?fl=pl&fe=sh"
     },
     size: 'vertical'
   },
+
   {
     id: 5,
     title: "Niña Chica",
@@ -83,24 +84,12 @@ const projects: Project[] = [
     },
     size: 'vertical'
   },
+
   {
     id: 6,
-    title: "De Vicente Dental",
-    category: "Entevista",
-    year: "2025",
-    description: "Vídeo comercial para la clínica De Vicente Dental en Granada, destinado a sus redes sociales y su página web, con objetivo de mostrar sus instalaciones y transmitir profesionalidad, tecnología y confianza. Este vídeo es solo una parte del trabajo que desarrollamos juntos, donde buscamos transmitir la esencia del lugar: un espacio moderno, cálido y pensado para que cada paciente se sienta cómodo desde el primer momento.",
-    image: "/projects/Entrevista/entre.png",
-    video: {
-      type: 'vimeo',
-      url: "https://player.vimeo.com/video/1140137791"
-    },
-    size: 'full'
-  },
-  {
-    id: 7,
-    title: "AUDI RS3 AUTO UNIÓN",
+    title: "Audio RS3 Auto Unión",
     category: "Redes Sociales",
-    year: "2025",
+    year: "2026",
     description: "Vídeo para las Redes Sociales de Concesionario Auto Unión en Granada",
     image: "/projects/Concesionario Union Granada/VolanteAudi.webp",
     video: {
@@ -110,7 +99,7 @@ const projects: Project[] = [
     size: 'vertical'
   },
   {
-    id: 8,
+    id: 7,
     title: "Cortador de Jamón",
     category: "Redes Sociales",
     year: "2025",
@@ -119,6 +108,98 @@ const projects: Project[] = [
     video: {
       type: 'vimeo',
       url: "https://player.vimeo.com/video/1174007974"
+    },
+    size: 'vertical'
+  },
+  {
+    id: 8,
+    title: "Indiba Alice Beauty Concept",
+    category: "TRATAMIENTOS",
+    year: "2026",
+    description: "Video promocional realizado para la clínica estética Alice Beauty Concept, enfocado en el tratamiento Indiba. La pieza resalta la calidad del servicio y la experiencia del cliente mediante una estética cuidada, elegante y atractiva. Para la grabación se utilizaron focos LED de iluminación profesional, logrando una imagen limpia, uniforme y favorecedora que potencia los detalles del tratamiento. El resultado es un contenido visual pensado para captar la atención, generar confianza y reforzar la imagen de marca en entornos digitales.",
+    image: "/projects/TRATAMIENTOS/INDIBA.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1182981809"
+    },
+    size: 'vertical'
+  },
+  {
+    id: 9,
+    title: "Bar El Salón 1958",
+    category: "HOSTELERÍA",
+    year: "2026",
+    description: "Video promocional para redes sociales realizado para El Salón 1958, centrado en una de sus hamburguesas. La pieza apuesta por un enfoque visual dinámico y apetecible, resaltando texturas, ingredientes y el proceso de preparación para despertar el deseo del espectador. Un contenido breve y directo, diseñado para captar la atención en redes y potenciar el atractivo del producto.",
+    image: "/projects/HOSTELERIA/HAMBURGUESA.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1182986366"
+    },
+    size: 'vertical'
+  },
+  {
+    id: 10,
+    title: "De Vicente Dental",
+    category: "Entevista",
+    year: "2025",
+    description: "A través de una iluminación suave, encuadres precisos y una narrativa natural, la entrevista pone en valor la experiencia del doctor, permitiendo al espectador conectar con su conocimiento y su forma de entender la salud bucodental. El resultado es un contenido que no solo informa, sino que también refuerza la imagen y credibilidad de De Vicente Dental.",
+    image: "/projects/Entrevista/entre.png",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1140137791"
+    },
+    size: 'full'
+  },
+  {
+    id: 11,
+    title: "AM Carmen de Calahonda",
+    category: "PROCESIONES",
+    year: "2026",
+    description: "Video para redes sociales realizado para la Agrupación Musical de Carmen de Calahonda, grabado durante el Jueves Santo en Pedrera. La pieza captura la fuerza, emoción y solemnidad del momento, combinando planos dinámicos con detalles expresivos de la interpretación musical. Un contenido breve y envolvente, pensado para transmitir la intensidad de la Semana Santa y conectar con la audiencia en redes sociales.",
+    image: "/projects/PROCESIONES/AM-CARMEN-DE-CALAHONDA.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1182969316"
+    },
+    size: 'vertical'
+  },
+  {
+    id: 12,
+    title: "G-Class Auto Unión",
+    category: "REDES SOCIALES",
+    year: "2026",
+    description: "Para el concesionario Auto Unión, realicé un video promocional enfocado en un Mercedes G-Class, destacando su carácter icónico, potencia y diseño atemporal. La pieza combina un enfoque visual dinámico con planos de detalle que realzan sus acabados y presencia, creando un contenido atractivo y directo para redes sociales, orientado a captar la atención y reforzar la imagen premium del vehículo.",
+    image: "/projects/REDES SOCIALES/G-CLASS.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1182982368"
+    },
+    size: 'vertical'
+  },
+  {
+    id: 13,
+    title: "Drop Longevity Alice Beauty Concept",
+    category: "TRATAMIENTOS",
+    year: "2026",
+    description: "Video para la clínica Alice Beauty Concept de su tratamiento Drop Longevity. Un contenido pensado para redes sociales, orientado a captar la atención, transmitir exclusividad y reforzar la identidad de la marca.",
+    image: "/projects/TRATAMIENTOS/DROP-LONGEVITY.webp",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1182982018"
+    },
+    size: 'vertical'
+  },
+
+  {
+    id: 14,
+    title: "Red Emprende",
+    category: "Eventos",
+    year: "2025",
+    description: "Cobertura audiovisual del evento Red Emprende Granada, donde alumnos de FP participaron en talleres y dinámicas de creación de ideas para impulsar la candidatura de Granada como Capital Europea de la Cultura. Desde mi enfoque como filmmaker, el objetivo fue capturar la energía creativa, la colaboración y el talento joven como motor de innovación cultural.",
+    image: "/projects/Evento/APLAUSOS00049511.jpg",
+    video: {
+      type: 'vimeo',
+      url: "https://player.vimeo.com/video/1152834576"
     },
     size: 'vertical'
   },

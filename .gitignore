@@ -33,3 +33,18 @@ dist-ssr
 *.mov
 *.avi
 *.jfif
+*.mkv
+*.wmv
+*.git/
+
+# Imágenes sin optimizar (opcional, comenta si las necesitas)
+# *.jpg
+# *.jpeg
+# *.png
+
+# Archivos de sistema
+Thumbs.db
+desktop.ini
+
+# Vite temp files
+vite.config.ts.timestamp-*.mjs
