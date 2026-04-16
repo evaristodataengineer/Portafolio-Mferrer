@@ -63,7 +63,7 @@ const projects: Project[] = [
     category: "Tratamientos",
     year: "2026",
     description: "Escucha tu piel, este es tu momento. Vídeo para las redes sociales de Alice Beauty Concept cuidando cada detalle para transmitir su esencia, profesionalidad y resultados.",
-    image: "/projects/TRATAMIENTOS/ESTE-ES-TU-MOMENTO",
+    image: "/projects/TRATAMIENTOS/ESTE-ES-TU-MOMENTO.webp",
     video: {
       type: 'vimeo',
       url: "https://vimeo.com/1182971799?fl=pl&fe=sh"
